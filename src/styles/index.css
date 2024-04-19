@@ -10,3 +10,48 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.black-box {
+    margin-left: 600px;
+    width: 200px;
+    height: 600px;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(51, 51, 51, 0.4);
+  }
+  
+  .light {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+  
+  .inactive {
+    background-color: #555555;
+  }
+  
+  .red {
+    background-color: red;
+    -webkit-box-shadow:0px 0px 105px 45px rgba(255,46,46,0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(255,46,46,0.9);
+    box-shadow: 0px 0px 105px 45px rgba(255,46,46,0.9);  
+  }
+  
+  .amber {
+    background-color: orange;
+    -webkit-box-shadow:0px 0px 105px 45px rgba(255,154,46,0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(255,154,46,0.9);
+    box-shadow: 0px 0px 105px 45px rgba(255,154,46,0.9);
+  }
+  
+  .green {
+    background-color: chartreuse;
+    -webkit-box-shadow:0px 0px 105px 45px rgba(42,181,51,0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(42,181,51,0.9);
+    box-shadow: 0px 0px 105px 45px rgba(42,181,51,0.9);
+  }
+  
