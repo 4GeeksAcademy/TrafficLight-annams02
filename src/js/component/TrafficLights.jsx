@@ -19,16 +19,24 @@ const TrafficLights = () => {
 
 	useEffect(() => console.log(stage), [stage]);
 
-	return	<Display {...stage} onClick={() => setStage(stages[stage.next])} />;
-	};
-
-	const Display = ({ red, amber, green, onClick }) => (
-	<div className="black-box" onClick={onClick}>
-		<div className={`light ${red ? "red" : "inactive"}`} />
-		<div className={`light ${amber ? "amber" : "inactive"}`} />
-		<div className={`light ${green ? "green" : "inactive"}`} />
-	</div>
+	const onClick = () => {
+		setStage(stages[stage.next])
+	}
+	
+	return	(
+		<div> 
+			<button type="button" className="btn btn-dark" onClick={onClick} > A por el siguiente! </button>
+			<div className="black-box">
+			<div className={`light ${stage.red ? "red" : "inactive"}`} />
+			<div className={`light ${stage.amber ? "amber" : "inactive"}`} />
+			<div className={`light ${stage.green ? "green" : "inactive"}`} />
+			</div> 
+		</div>
+	
 	);
+
+};
+
 
 	
 export default TrafficLights;
