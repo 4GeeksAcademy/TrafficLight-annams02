@@ -12,7 +12,7 @@
 */
 
 .black-box {
-    margin-left: 600px;
+    margin-left: 620px;
     width: 200px;
     height: 600px;
     background-color: black;
@@ -55,3 +55,8 @@
     box-shadow: 0px 0px 105px 45px rgba(42,181,51,0.9);
   }
   
+  .containerButton{
+    font-size: 400%;
+    text-align: center;
+  } 
+ 
